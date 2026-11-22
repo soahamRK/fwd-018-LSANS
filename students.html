@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Students | LSANS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar"><div class="top-bar-left">South Asian University</div><div class="top-bar-right">LSANS Lab Portal</div></div>
+    <header class="site-header">
+        <div class="lab-brand"><h1>LSANS</h1><p>Current Research Scholars</p></div>
+        <button id="themeBtn" class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="pi.html" class="nav-link">PI</a>
+            <a href="students.html" class="nav-link active">Students</a>
+            <a href="alumni.html" class="nav-link">Alumni</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card-section">
+            <h2 class="section-title">Current Lab Members</h2>
+            <br>
+            <input type="text" id="searchInput" class="search-box" onkeyup="filterCards()" placeholder="🔍 Search student by name, thesis, or degree...">
+            <br>
+
+            <div class="member-card searchable-card">
+                <div class="avatar-circle av-green">KS</div>
+                <span class="role-tag tag-phd">Ph.D. Scholar • Ongoing</span>
+                <h3>Kirti Shukla</h3>
+                <p><strong>Institute:</strong> South Asian University, New Delhi</p>
+                <div class="thesis-box"><strong>Thesis Title:</strong> Advancing Influence Maximization in Signed Social Networks through Diversity and Diffusion Dynamics</div>
+                <p class="bio-text">Supervised by Dr. Shashank Sheshar Singh. Models positive and negative trust edges in signed social graphs for fair information spread.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kirti-shukla-63b4a2383/" target="_blank" class="social-btn linkedin-btn">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <div class="member-card searchable-card">
+                <div class="avatar-circle av-orange">ZW</div>
+                <span class="role-tag tag-mtech">M.Tech. Scholar • Ongoing</span>
+                <h3>Zubin Walia</h3>
+                <p><strong>Institute:</strong> South Asian University, New Delhi</p>
+                <div class="thesis-box"><strong>Thesis Title:</strong> Privacy Preserving Machine Learning</div>
+                <p class="bio-text">Supervised by Dr. Shashank Sheshar Singh and Co-Supervised by Dr. Reshma Rastogi (SAU). Focuses on safeguarding user data privacy in ML.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/zubin-walia/" target="_blank" class="social-btn linkedin-btn">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <div class="member-card searchable-card">
+                <div class="avatar-circle av-purple">PR</div>
+                <span class="role-tag tag-imp">IMP Scholar • Ongoing</span>
+                <h3>Pratima Rajput</h3>
+                <p><strong>Institute:</strong> South Asian University, New Delhi</p>
+                <div class="thesis-box"><strong>Thesis Title:</strong> Influence Maximization in Signed Social Networks</div>
+                <p class="bio-text">Supervised by Dr. Shashank Sheshar Singh. Investigates seed-selection heuristics in signed social networks.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/pratima-rajput-22a382112/" target="_blank" class="social-btn linkedin-btn">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <div class="member-card searchable-card">
+                <div class="avatar-circle av-teal">VR</div>
+                <span class="role-tag tag-msc">M.Sc. Scholar • Ongoing</span>
+                <h3>Vithul Rajeev</h3>
+                <p><strong>Institute:</strong> South Asian University, New Delhi</p>
+                <div class="thesis-box"><strong>Thesis Title:</strong> Link Prediction in Signed Social Networks</div>
+                <p class="bio-text">Supervised by Dr. Shashank Sheshar Singh. Develops structural balance algorithms to forecast positive and negative ties.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vithulrajeev11pytensor/" target="_blank" class="social-btn linkedin-btn">LinkedIn ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><p>© 2026 LSANS, SAU</p></footer>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

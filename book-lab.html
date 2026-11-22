@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Lab Slot | LSANS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">South Asian University</div>
+        <div class="top-bar-right">LSANS Lab Portal</div>
+    </div>
+
+    <header class="site-header">
+        <div class="lab-brand">
+            <h1>LSANS</h1>
+            <p>Lab Equipment & Slot Reservation</p>
+        </div>
+        <button id="themeBtn" class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="talks.html" class="nav-link">Talks</a>
+            <a href="availability.html" class="nav-link">Availability</a>
+            <a href="book-lab.html" class="nav-link active">Book Lab</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="join.html" class="nav-link">Join</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card-section" style="max-width: 650px; margin: 0 auto;">
+            <h2 class="section-title">Reserve Lab Room CSE-221 Slot</h2>
+            <p class="lead-text">Fill out the form below to request access to lab facilities or computing workstations.</p>
+            
+            <form onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label>University Roll No / ID:</label>
+                    <input type="text" required placeholder="Enter SAU ID (e.g., SAU/CSE/...)">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Date & Time:</label>
+                    <input type="datetime-local" required>
+                </div>
+                <div class="form-group">
+                    <label>Purpose of Reservation:</label>
+                    <textarea rows="4" required placeholder="Describe what you plan to work on (e.g., dataset simulation, workstation testing)..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Laboratory of Social Analytics and Network Science (LSANS), South Asian University.</p>
+    </footer>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

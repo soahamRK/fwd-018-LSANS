@@ -1,0 +1,381 @@
+/* Theme Variables - Light Mode (Default) */
+:root {
+    --bg-body: #f1f5f9;
+    --bg-card: #ffffff;
+    --bg-top: #0f172a;
+    --bg-header: #1e3a8a;
+    --text-main: #1e293b;
+    --text-muted: #475569;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --border-color: #cbd5e1;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-body: #0b1120;
+    --bg-card: #1e293b;
+    --bg-top: #020617;
+    --bg-header: #172554;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+    --border-color: #334155;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Top Bar */
+.top-bar {
+    background: var(--bg-top);
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    padding: 8px 5%;
+    overflow: hidden;
+}
+
+.top-bar-left { float: left; }
+.top-bar-right { float: right; }
+
+/* Header & Navigation */
+.site-header {
+    background: var(--bg-header);
+    color: #ffffff;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.lab-brand {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lab-brand h1 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.lab-brand p {
+    font-size: 0.8rem;
+    color: #bfdbfe;
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    float: right;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 7px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.navbar {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.nav-link {
+    display: inline-block;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 6px 11px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+/* Hero Banner */
+.hero-section, .page-banner {
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
+    color: #ffffff;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.badge {
+    background: rgba(59, 130, 246, 0.25);
+    border: 1px solid #60a5fa;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-section h2, .page-banner h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p, .page-banner p {
+    max-width: 780px;
+    margin: 0 auto 25px auto;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary { background: var(--accent); color: #ffffff; }
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+.btn-outline { border: 2px solid #ffffff; color: #ffffff; background: transparent; }
+.btn-outline:hover { background: #ffffff; color: #0f172a; }
+
+/* Container & Cards */
+.container {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card-section {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+}
+
+.section-title {
+    color: var(--accent);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.lead-text {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* Styled Initials Avatars */
+.avatar-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover .avatar-circle {
+    transform: scale(1.08) rotate(3deg);
+}
+
+.av-blue { background: linear-gradient(135deg, #2563eb, #1e40af); }
+.av-green { background: linear-gradient(135deg, #10b981, #047857); }
+.av-purple { background: linear-gradient(135deg, #8b5cf6, #5b21b6); }
+.av-orange { background: linear-gradient(135deg, #f59e0b, #b45309); }
+.av-teal { background: linear-gradient(135deg, #14b8a6, #0f766e); }
+
+/* Member & Research Cards */
+.member-card, .research-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 1% 0.8%;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.member-card:hover, .research-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.research-card.highlighted-card {
+    border: 2px solid var(--accent);
+    background: rgba(37, 99, 235, 0.08);
+}
+
+.card-num {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Role Badges */
+.role-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.tag-pi { background: #dbeafe; color: #1e40af; }
+.tag-phd { background: #dcfce7; color: #166534; }
+.tag-mtech { background: #fef3c7; color: #92400e; }
+.tag-imp { background: #f3e8ff; color: #6b21a8; }
+.tag-msc { background: #ffe4e6; color: #9f1239; }
+.tag-alumni { background: #e2e8f0; color: #334155; }
+
+.thesis-box {
+    background: rgba(37, 99, 235, 0.07);
+    border-left: 4px solid var(--accent);
+    padding: 10px 12px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+}
+
+.bio-text {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+/* Social Buttons */
+.social-links {
+    margin-top: 12px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+
+.linkedin-btn { background: #0a66c2; color: #ffffff; }
+.github-btn { background: #24292e; color: #ffffff; }
+.sau-btn { background: #475569; color: #ffffff; }
+
+/* Search Input */
+.search-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--bg-card);
+    color: var(--text-main);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Tables */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.styled-table th {
+    background: var(--bg-header);
+    color: #ffffff;
+}
+
+/* Forms */
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 5px; }
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: var(--bg-card);
+    color: var(--text-main);
+}
+
+/* Footer */
+.site-footer {
+    background: var(--bg-top);
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px 5%;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: var(--accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+    .member-card, .research-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

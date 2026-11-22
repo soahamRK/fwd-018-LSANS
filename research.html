@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Focus | LSANS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar"><div class="top-bar-left">South Asian University</div><div class="top-bar-right">LSANS Lab Portal</div></div>
+    <header class="site-header">
+        <div class="lab-brand"><h1>LSANS</h1><p>Research & Verticals</p></div>
+        <button id="themeBtn" class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="research.html" class="nav-link active">Research</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card-section">
+            <h2 class="section-title">Current Research Directions</h2>
+            <p class="lead-text">Click any research card below to interact with JavaScript highlighting.</p>
+            <div class="research-card" onclick="toggleHighlight(this)"><span class="card-num">01</span><h3>Fair Influence Maximization</h3><p>Ensuring equitable spread across different communities and demographics.</p></div>
+            <div class="research-card" onclick="toggleHighlight(this)"><span class="card-num">02</span><h3>Fairness-Aware Link Prediction</h3><p>Minimizing systemic biases in network link prediction algorithms.</p></div>
+            <div class="research-card" onclick="toggleHighlight(this)"><span class="card-num">03</span><h3>Adversarial Community Detection</h3><p>Robust community detection against adversarial attacks and network noise.</p></div>
+            <div class="research-card" onclick="toggleHighlight(this)"><span class="card-num">04</span><h3>Information Dissemination</h3><p>Counteracting the spread of misinformation and echo chambers.</p></div>
+            <div class="research-card" onclick="toggleHighlight(this)"><span class="card-num">05</span><h3>Scalable Meta-heuristics</h3><p>Optimizing NP-hard problems like influence maximization in multi-million node networks.</p></div>
+            <div class="research-card" onclick="toggleHighlight(this)"><span class="card-num">06</span><h3>Soft Computing & Social AI</h3><p>Modeling semantic uncertainty in human-generated social media data.</p></div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><p>© 2026 LSANS, SAU</p></footer>
+    <button id="backToTop" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
